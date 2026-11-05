@@ -59,6 +59,22 @@ Append an object to `packages` in `catalog.json` and bump nothing else
 - Multiple links per entry are fine (mirrors or parts); give each a clear name.
 - `posterUrl`, `description`, `downloadSource`, `category`, `version` are
   optional but recommended.
+- `filename` pins the exact artifact name the host should serve (title ID and
+  version are usually embedded in it) — record it when the host page shows it.
+- `checksum` (sha256 hex) and `sizeBytes` (exact byte count) when you know
+  them; most cyberlocker pages list neither, so treat every downloaded FPKG as
+  untrusted input and sanity-check the filename after download.
+
+### Trust model
+
+These catalogs point at mutable cyberlocker pages (often captcha-gated; use
+the app's built-in browser to capture the download). Nothing here
+cryptographically verifies a downloaded file, so the practical integrity
+checks are: the pinned `filename`, the `titleId`/`version` fields, and the
+fact that every entry was hand-picked from the page in `downloadSource`.
+The catalog itself is served over HTTPS via GitHub Pages; the
+`python3 -m http.server` LAN option is plaintext — use it only on a trusted
+LAN.
 
 ### Getting links off dlpsgame.com
 
