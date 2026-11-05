@@ -8,7 +8,16 @@ A hand-curated catalog for [Pegasus DL+](https://github.com/pegasus-ps5/pegasus-
 
 ## Serve it
 
-Pegasus DL+ needs an HTTP(S) URL for the catalog. Options:
+**This catalog is live on GitHub Pages (repo: `bsk193/pegasus-dl-source`):**
+
+```
+https://bsk193.github.io/pegasus-dl-source/pegasus-dl-source/catalog.json
+```
+
+Add that URL in Pegasus DL+ → Sources. Push to `main` to publish updates
+(Pages deploys the repo root of `main`).
+
+Other options:
 
 **LAN (truly private):** from this folder run:
 
