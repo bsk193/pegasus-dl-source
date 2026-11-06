@@ -1,17 +1,18 @@
-# Private Pegasus DL+ Catalog
+# x-games — Private Pegasus DL+ Catalog
 
 A hand-curated catalog for [Pegasus DL+](https://github.com/pegasus-ps5/pegasus-dl).
 Every entry points at a file on our own B2 storage — no third-party catalogs,
 no scene-page provenance.
 
-- Catalog file: `catalog.json`
-- Posters: `posters/<TITLEID>.jpg`, served by the same Pages site
-- Current entries: 1 (Ghost of Tsushima DC, USA, v02.024, FPKG)
+- Catalog file: `catalog.json` (repo root)
+- Posters: `posters/<TITLEID>.jpg`
+- Current entries: 2 (Ghost of Tsushima DC USA v02.024 · Ghost of Yōtei
+  Complete Edition USA)
 
 ## Live URL
 
 ```
-https://bsk193.github.io/pegasus-dl-source/pegasus-dl-source/catalog.json
+https://bsk193.github.io/pegasus-dl-source/catalog.json
 ```
 
 Add it in Pegasus DL+ → Sources. Pushes to `main` redeploy automatically
@@ -31,15 +32,15 @@ Add it in Pegasus DL+ → Sources. Pushes to `main` redeploy automatically
 
    ```json
    {
-     "titleId": "PPSA02225",
+     "titleId": "PPSA26344",
      "title": "Game Title",
      "category": "game",
      "version": "02.024",
      "filename": "File.pkg",
-     "sizeBytes": 65940261190,
+     "sizeBytes": 118156216762,
      "checksumSha1": "<from x-bz-info-large_file_sha1>",
-     "posterUrl": "https://bsk193.github.io/pegasus-dl-source/pegasus-dl-source/posters/<TITLEID>.jpg",
-     "description": "Region: USA\nFirmware: 4.xx+",
+     "posterUrl": "https://bsk193.github.io/pegasus-dl-source/posters/<TITLEID>.jpg",
+     "description": "Region: USA\nSize: 110.1 GiB (118,156,216,762 bytes)",
      "downloadLinks": [
        { "name": "USA (v02.024) (FPKG)", "url": "https://f003.backblazeb2.com/file/x-games/ps5/File.pkg" }
      ]
@@ -52,6 +53,8 @@ Add it in Pegasus DL+ → Sources. Pushes to `main` redeploy automatically
 
 - `titleId` groups all links under one game tile; `downloadLinks[].name`
   labels each link (use it to distinguish region / version / format).
+- `version` is optional — include it when the filename or source states it,
+  omit it when unknown.
 - `sizeBytes` + `checksumSha1` come from B2's response headers, so a wrong or
   swapped file at the URL is detectable after download
   (`sha1sum File.pkg` should match `checksumSha1`).
