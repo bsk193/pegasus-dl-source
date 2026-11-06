@@ -10,9 +10,8 @@
       "filename": "Ghost_of_Tsushima_Directors_Cut_PPSA02225.pkg",
       "sizeBytes": 65940261190,
       "checksumSha1": "963ab848f8999aabfd7ee83db62a79c38cd527d9",
-      "posterUrl": "https://pegasus-dl.dev/api/posters/33968a4d91024ee564853f2bf02588fa8ffc42999829cddde978cdfb33cb627a",
-      "description": "Region: USA\nFirmware: 4.xx+\nDLCs merged: yes\nSize: 61.4 GiB (65,940,261,190 bytes)\nHosted on our private B2 bucket (x-games)\nCredits: SiESPTA & YenGr3sS (files), Iori (fpkg)",
-      "downloadSource": "https://dlpsgame.com/ghost-of-tsushima-directors-cut-free-ps5/",
+      "posterUrl": "https://bsk193.github.io/pegasus-dl-source/pegasus-dl-source/posters/PPSA02225.jpg",
+      "description": "Region: USA\nFirmware: 4.xx+\nDLCs merged: yes\nSize: 61.4 GiB (65,940,261,190 bytes)",
       "downloadLinks": [
         {
           "name": "USA (v02.024) (FPKG)",
