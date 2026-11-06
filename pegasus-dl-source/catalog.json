@@ -7,14 +7,16 @@
       "title": "Ghost of Tsushima Director's Cut",
       "category": "game",
       "version": "02.024",
-      "filename": "Ghost of Tsushima UP9000-PPSA02225_00-GHOSTSHIP0000000-A02024-V02024.pkg",
+      "filename": "Ghost_of_Tsushima_Directors_Cut_PPSA02225.pkg",
+      "sizeBytes": 65940261190,
+      "checksumSha1": "963ab848f8999aabfd7ee83db62a79c38cd527d9",
       "posterUrl": "https://pegasus-dl.dev/api/posters/33968a4d91024ee564853f2bf02588fa8ffc42999829cddde978cdfb33cb627a",
-      "description": "Region: USA\nFirmware: 4.xx+\nDLCs merged: yes\nSize: 61 GB\nPassword (if asked): DLPSGAME.COM\nCredits: SiESPTA & YenGr3sS (files), Iori (fpkg)",
+      "description": "Region: USA\nFirmware: 4.xx+\nDLCs merged: yes\nSize: 61.4 GiB (65,940,261,190 bytes)\nHosted on our private B2 bucket (x-games)\nCredits: SiESPTA & YenGr3sS (files), Iori (fpkg)",
       "downloadSource": "https://dlpsgame.com/ghost-of-tsushima-directors-cut-free-ps5/",
       "downloadLinks": [
         {
           "name": "USA (v02.024) (FPKG)",
-          "url": "https://vik1ngfile.site/f/Qr9uw64KZi"
+          "url": "https://f003.backblazeb2.com/file/x-games/ps5/Ghost_of_Tsushima_Directors_Cut_PPSA02225.pkg"
         }
       ]
     }

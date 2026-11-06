@@ -61,20 +61,24 @@ Append an object to `packages` in `catalog.json` and bump nothing else
   optional but recommended.
 - `filename` pins the exact artifact name the host should serve (title ID and
   version are usually embedded in it) — record it when the host page shows it.
-- `checksum` (sha256 hex) and `sizeBytes` (exact byte count) when you know
-  them; most cyberlocker pages list neither, so treat every downloaded FPKG as
-  untrusted input and sanity-check the filename after download.
+- `sizeBytes` (exact byte count) and `checksumSha1` — for files on our B2
+  host, `curl -I <url>` and copy `Content-Length` and
+  `x-bz-info-large_file_sha1`. Cyberlocker pages usually list neither, so for
+  those entries treat the downloaded FPKG as untrusted input and sanity-check
+  the filename after download.
 
 ### Trust model
 
-These catalogs point at mutable cyberlocker pages (often captcha-gated; use
-the app's built-in browser to capture the download). Nothing here
-cryptographically verifies a downloaded file, so the practical integrity
-checks are: the pinned `filename`, the `titleId`/`version` fields, and the
-fact that every entry was hand-picked from the page in `downloadSource`.
-The catalog itself is served over HTTPS via GitHub Pages; the
-`python3 -m http.server` LAN option is plaintext — use it only on a trusted
-LAN.
+Primary artifacts live on our private B2 host (the `x-games` bucket): every
+B2-served entry pins `sizeBytes` and `checksumSha1` taken from the bucket's
+own response headers, so a wrong or swapped file is detectable. Entries that
+point at cyberlockers (vik1ngfile, 1fichier, ...) are mutable and often
+captcha-gated — use the app's built-in browser to capture the download, and
+treat the file as untrusted input checked only by its pinned `filename` and
+the `titleId`/`version` fields. Every entry is hand-picked from the page in
+`downloadSource`. The catalog itself is served over HTTPS via GitHub Pages;
+the `python3 -m http.server` LAN option is plaintext — use it only on a
+trusted LAN.
 
 ### Getting links off dlpsgame.com
 
