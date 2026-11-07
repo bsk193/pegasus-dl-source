@@ -28,7 +28,9 @@ Add it in Pegasus DL+ → Sources. Pushes to `main` redeploy automatically
      | grep -iE 'content-length|x-bz-info-large_file_sha1'
    ```
 
-3. Append a package object to `packages` in `catalog.json`:
+3. Append a package object to `packages` in `catalog.json`. Download links use
+   the `dl-xgames.oneup.pt` host (Cloudflare in front, 302s to a tokenized
+   CDN); metadata still comes from the native B2 URL:
 
    ```json
    {
@@ -42,7 +44,7 @@ Add it in Pegasus DL+ → Sources. Pushes to `main` redeploy automatically
      "posterUrl": "https://bsk193.github.io/pegasus-dl-source/posters/<TITLEID>.jpg",
      "description": "Region: USA\nSize: 110.1 GiB (118,156,216,762 bytes)",
      "downloadLinks": [
-       { "name": "USA (v02.024) (FPKG)", "url": "https://f003.backblazeb2.com/file/x-games/ps5/File.pkg" }
+       { "name": "USA (v02.024) (FPKG)", "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/File.pkg" }
      ]
    }
    ```
@@ -60,6 +62,11 @@ Add it in Pegasus DL+ → Sources. Pushes to `main` redeploy automatically
   (`sha1sum File.pkg` should match `checksumSha1`).
 - The B2 native URL is unauthenticated: anyone holding the exact URL can
   fetch the file. Treat it as obscure, not secret.
+- `dl-xgames.oneup.pt` is UA-gated by Cloudflare: browser-like UAs get a
+  clean 302 to the CDN; non-browser UAs (default curl/libcurl) get a JS
+  challenge (403). If downloads fail on the PS5 with an HTML error instead
+  of a .pkg, add a Cloudflare WAF skip rule for the
+  `/6c8fea364f470eee9f744cb00ee5b5ef/f/*` path (or allow the app's UA).
 - Offline/LAN fallback: from this folder run
   `python3 -m http.server 8080` and add
   `http://<LAN-IP>:8080/catalog.json` (plaintext — trusted LAN only).
