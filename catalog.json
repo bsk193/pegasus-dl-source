@@ -7,15 +7,13 @@
       "title": "Ghost of Tsushima Director's Cut",
       "category": "game",
       "version": "02.024",
-      "filename": "Ghost_of_Tsushima_Directors_Cut_PPSA02225.pkg",
-      "sizeBytes": 65940261190,
-      "checksumSha1": "963ab848f8999aabfd7ee83db62a79c38cd527d9",
       "posterUrl": "https://bsk193.github.io/pegasus-dl-source/posters/PPSA02225.jpg",
-      "description": "Region: USA\nFirmware: 4.xx+\nDLCs merged: yes\nSize: 61.4 GiB (65,940,261,190 bytes)",
+      "description": "Region: USA\nFirmware: 4.xx+\nBase game FPKG\nSize: 61.4 GiB (65,939,734,686 bytes)",
       "downloadLinks": [
         {
-          "name": "USA (v02.024) (FPKG)",
-          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Ghost_of_Tsushima_Directors_Cut_PPSA02225.pkg"
+          "name": "USA (v02.024) BASE (FPKG)",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Ghost_of_Tsushima_Directors_Cut_PPSA02225_BASE.pkg",
+          "sizeBytes": 65939734686
         }
       ]
     },
@@ -23,15 +21,18 @@
       "titleId": "PPSA26344",
       "title": "Ghost of Yōtei Complete Edition",
       "category": "game",
-      "filename": "Ghost_of_Yōtei_Complete_Edition_PPSA26344.pkg",
-      "sizeBytes": 118156216762,
-      "checksumSha1": "c27dbd4d37f2b882e2b04c96a6a81ebd9899c2a5",
       "posterUrl": "https://bsk193.github.io/pegasus-dl-source/posters/PPSA26344.jpg",
-      "description": "Region: USA\nSize: 110.1 GiB (118,156,216,762 bytes)",
+      "description": "Region: USA\nBASE: 110.1 GiB (118,154,628,798 bytes)\nDLC: 1.4 MB (1,386,407 bytes) — install after BASE",
       "downloadLinks": [
         {
-          "name": "USA (FPKG)",
-          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Ghost_of_Y%C5%8Dtei_Complete_Edition_PPSA26344.pkg"
+          "name": "USA BASE (FPKG)",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Ghost_of_Yotei_Complete_Edition_PPSA26344_BASE.pkg",
+          "sizeBytes": 118154628798
+        },
+        {
+          "name": "USA DLC (FPKG) — install after BASE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Ghost_of_Yotei_Complete_Edition_PPSA26344_DLC.pkg",
+          "sizeBytes": 1386407
         }
       ]
     }
