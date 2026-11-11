@@ -58,7 +58,12 @@ Repo: `bsk193/pegasus-dl-source`.
    }
    ```
 
-4. Drop a poster at `posters/<TITLEID>.jpg`, commit, push. Live ~a minute later.
+4. Grab a poster and save it as `posters/<TITLEID>.jpg` (self-hosted — the
+   catalog never hotlinks outside this repo). Sources, in order of
+   preference: the game's dlpsgame page (search
+   `dlpsgame.com/?s=<title>+ps4` / `?s=<title>+ps5`, take the post's
+   `og:image` — usually the box art; PS4 index: `dlpsgame.com/category/ps4/`),
+   or any stable portrait key-art CDN. Commit, push. Live ~a minute later.
 
 ### Notes
 
