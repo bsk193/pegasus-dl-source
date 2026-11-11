@@ -1,5 +1,70 @@
 {
   "name": "Personal Catalog PS4",
   "version": 1,
-  "packages": []
+  "packages": [
+    {
+      "titleId": "CUSA09171",
+      "title": "Resident Evil 2",
+      "category": "game",
+      "posterUrl": "https://bsk193.github.io/pegasus-dl-source/posters/CUSA09171.jpg",
+      "description": "Region: USA\nBASE: 21.6 GiB (23,200,268,288 bytes)\nUPDATE: 1.4 GiB (1,515,913,216 bytes)\nDLC 1-9: 138.5 MB total — install BASE, then UPDATE, then DLCs",
+      "downloadLinks": [
+        {
+          "name": "USA BASE (FPKG)",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_BASE.pkg",
+          "sizeBytes": 23200268288
+        },
+        {
+          "name": "USA UPDATE (FPKG) — install after BASE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_UPDATE.pkg",
+          "sizeBytes": 1515913216
+        },
+        {
+          "name": "USA DLC 1 (FPKG) — install after UPDATE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_DLC_1.pkg",
+          "sizeBytes": 1048576
+        },
+        {
+          "name": "USA DLC 2 (FPKG) — install after UPDATE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_DLC_2.pkg",
+          "sizeBytes": 5177344
+        },
+        {
+          "name": "USA DLC 3 (FPKG) — install after UPDATE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_DLC_3.pkg",
+          "sizeBytes": 32243712
+        },
+        {
+          "name": "USA DLC 4 (FPKG) — install after UPDATE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_DLC_4.pkg",
+          "sizeBytes": 50135040
+        },
+        {
+          "name": "USA DLC 5 (FPKG) — install after UPDATE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_DLC_5.pkg",
+          "sizeBytes": 21495808
+        },
+        {
+          "name": "USA DLC 6 (FPKG) — install after UPDATE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_DLC_6.pkg",
+          "sizeBytes": 6291456
+        },
+        {
+          "name": "USA DLC 7 (FPKG) — install after UPDATE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_DLC_7.pkg",
+          "sizeBytes": 8519680
+        },
+        {
+          "name": "USA DLC 8 (FPKG) — install after UPDATE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_DLC_8.pkg",
+          "sizeBytes": 8454144
+        },
+        {
+          "name": "USA DLC 9 (FPKG) — install after UPDATE",
+          "url": "https://dl-xgames.oneup.pt/6c8fea364f470eee9f744cb00ee5b5ef/f/Resident_Evil_2_CUSA09171_DLC_9.pkg",
+          "sizeBytes": 4456448
+        }
+      ]
+    }
+  ]
 }
