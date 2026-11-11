@@ -4,23 +4,28 @@ A hand-curated catalog for [Pegasus DL+](https://github.com/pegasus-ps5/pegasus-
 Every entry points at a file on our own B2 storage — no third-party catalogs,
 no scene-page provenance.
 
-- Catalog file: `catalog.json` (repo root)
+- PS5 catalog: `catalog.json` (repo root) — PPSA title IDs, bucket `ps5/`
+- PS4 catalog: `catalog-ps4.json` (repo root) — CUSA title IDs, bucket `ps4/`,
+  same format
 - Posters: `posters/<TITLEID>.jpg`
-- Current entries: 2 (Ghost of Tsushima DC USA v02.024 · Ghost of Yōtei
-  Complete Edition USA)
+- Current entries: 2 PS5 (Ghost of Tsushima DC USA v02.024 · Ghost of Yōtei
+  Complete Edition USA) · 0 PS4
 
-## Live URL
+## Live URLs
 
 ```
-https://bsk193.github.io/pegasus-dl-source/catalog.json
+https://bsk193.github.io/pegasus-dl-source/catalog.json      (PS5)
+https://bsk193.github.io/pegasus-dl-source/catalog-ps4.json  (PS4)
 ```
 
-Add it in Pegasus DL+ → Sources. Pushes to `main` redeploy automatically
-(Pages serves the repo root of `main`). Repo: `bsk193/pegasus-dl-source`.
+Add each in Pegasus DL+ → Sources (one per console library). Pushes to
+`main` redeploy automatically (Pages serves the repo root of `main`).
+Repo: `bsk193/pegasus-dl-source`.
 
 ## Add an entry
 
-1. Upload the file to the B2 `x-games` bucket under `ps5/`.
+1. Upload the file to the B2 `x-games` bucket under `ps5/` (PS5) or `ps4/`
+   (PS4), and add the entry to the matching catalog file.
 2. Get the exact byte size with a ranged GET through the download host
    (needs a browser-like UA; plain curl gets Cloudflare-challenged):
 
